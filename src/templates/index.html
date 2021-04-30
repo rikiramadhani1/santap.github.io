@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+    <title>Santap Apps</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <h1 class="header__title">
+                Santap
+            </h1>
+            <h1 class="header__jargon">
+                Sabana Mantap
+            </h1>
+        </div>
+        <a id="menu" class="header__menu">☰</a>
+    </header>
+
+    <nav id="drawer" class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#">Home</a></li>
+            <li class="nav__item"><a href="#">Favorite</a></li>
+            <li class="nav__item"><a href="https://www.linkedin.com/in/rikiramadhani/">About Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <div class="hero__inner">
+            <h1 class="hero__title">Kembalikan Nafsu Makanmu Disini</h1>
+            <p class="hero__tagline">Temukan makan favorite mu dan nikmati dengan rasa syukur kepada Ilahi</p>
+        </div>
+    </div>
+
+    <main>
+        <section class="content">
+            <article class="headline">
+                <figure class="headline__figure">
+                    <img src="images/headline-image.jpg" width="20px" alt="Santap Lounge">
+                    <figcaption>Santap March 2020 Infographic, 103k Members</figcaption>
+                </figure>
+                <div class="headline__content">
+                    <h1 class="headline__title">#sabanamantap : Cerita dari pelanggan</h1>
+                    <p class="headline__description">Makanan disini itu enak-enak. Tidak ada duanya. Santap ya emang
+                        sabana mantap(betul2 mantap).
+                    </p>
+                    <button class="headline__button">Read More</button>
+                </div>
+            </article>
+            <div class="explore">
+                <h1 class="explore__label">Explore Restaurant</h1>
+                <div class="restaurants" id="show-data">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+
+    <script src="http://localhost:5500/src/scripts/getData.js">
+    </script>
+
+    <footer>
+        <p>Copyright &copy; 2021 - Santap Apps</p>
+    </footer>
+</body>
+
+</html>
