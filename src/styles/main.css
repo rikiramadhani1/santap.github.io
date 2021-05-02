@@ -285,7 +285,7 @@ body {
 .restaurant-item__title {
     font-weight: 300;
     font-size: 44px;
-    padding: 5px 0px 5px;
+    padding: 5px 0 5px;
     margin-top: 5px;
     transition: 0.3s opacity;
 }

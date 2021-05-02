@@ -23,7 +23,7 @@ main.addEventListener('click', function () {
 });
 
 
-$(document).ready(function () {
+$(function () {
     const showData = $('#show-data');
     const restaurants = data.restaurants.map(function (restaurant) {
         return `<div class="restaurant-container">
@@ -43,7 +43,7 @@ $(document).ready(function () {
     showData.empty();
 
     if (restaurants.length) {
-        const content = '<article class="restaurant-item">' + restaurants.join('</article><article class="restaurant-item">') + '</article>';
+        const content = `<article class="restaurant-item">${restaurants.join('</article><article class="restaurant-item">')}</article>`;
         showData.append(content);
     }
 
