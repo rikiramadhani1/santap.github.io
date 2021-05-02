@@ -62,11 +62,11 @@
     }
 
     .restaurant-item__title {
-        font-size: 18px;
+        font-size: 38px;
     }
 
     .restaurant-item__description {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 

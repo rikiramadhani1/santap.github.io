@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <a href="#maincontent" class="skip-link">Menuju ke konten</a>
     <header class="header">
         <div class="header__inner">
             <h1 class="header__title">
@@ -19,14 +20,14 @@
                 Sabana Mantap
             </h1>
         </div>
-        <a id="menu" class="header__menu">☰</a>
+        <a href="#" id="menu" class="header__menu">☰</a>
     </header>
 
     <nav id="drawer" class="nav">
         <ul class="nav__list">
-            <li class="nav__item"><a href="#">Home</a></li>
+            <li class="nav__item"><a href="/.">Home</a></li>
             <li class="nav__item"><a href="#">Favorite</a></li>
-            <li class="nav__item"><a href="https://www.linkedin.com/in/rikiramadhani/">About Us</a></li>
+            <li class="nav__item"><a href="https://www.linkedin.com/in/rikiramadhani/" target="_blank">About Us</a></li>
         </ul>
     </nav>
 
@@ -37,7 +38,7 @@
         </div>
     </div>
 
-    <main>
+    <main id="maincontent">
         <section class="content">
             <article class="headline">
                 <figure class="headline__figure">
@@ -59,13 +60,6 @@
             </div>
         </section>
     </main>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
-        </script>
-
-    <script src="http://localhost:5500/src/scripts/getData.js">
-    </script>
 
     <footer>
         <p>Copyright &copy; 2021 - Santap Apps</p>
