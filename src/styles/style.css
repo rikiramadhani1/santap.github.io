@@ -1,0 +1,410 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #424242;
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+ * Skip Link
+ */
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  text-decoration: none;
+  background-color: #bf1722;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/*
+ * Jumbotron
+ */
+
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 380px;
+  width: 100%;
+  text-align: center;
+  background-image: url("../public/images/heros/hero-image_4.jpg");
+  background-position: center;
+  background-color: green;
+}
+
+.hero__inner {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.hero__title {
+  color: #fff;
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.hero__tagline {
+  color: #fff;
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+
+ 
+/*
+  AppBar
+*/
+ 
+.app-bar {
+  padding: 8px 16px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+ 
+.app-bar .app-bar__menu {
+  display: flex;
+  align-items: center;
+}
+ 
+.app-bar .app-bar__menu button {
+  background-color: transparent;
+  border: none;
+  font-size: 32px;
+  padding: 8px;
+  cursor: pointer;
+}
+ 
+.app-bar .app-bar__brand {
+  display: flex;
+  align-items: center;
+}
+ 
+.app-bar .app-bar__brand h1 {
+  text-transform: uppercase;
+  user-select: none;
+  font-weight: 400;
+  font-size: 3em;
+  display: inline-block;
+  color: #212121;
+}
+ 
+.app-bar .app-bar__navigation {
+  position: absolute;
+  top: 50px;
+  left: -180px;
+  width: 150px;
+  transition: all 0.3s;
+  padding: 8px;
+  background-color: white;
+  overflow: hidden;
+}
+ 
+.app-bar .app-bar__navigation.open {
+  left: 0;
+}
+ 
+.app-bar .app-bar__navigation ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 14px 10px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+ 
+/*
+  Main Content
+*/
+ 
+main {
+  width: 100%;
+  padding-top: 5px;
+  flex: 1;
+}
+ 
+.content {
+  padding: 48px;
+}
+ 
+.content .content__heading {
+  font-weight: normal;
+}
+ 
+ 
+/*
+  restaurants
+*/
+.restaurant__title {
+  margin-top: 16px;
+}
+ 
+.restaurants {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin: 32px auto auto;
+  text-align: left;
+}
+
+.restaurant {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px 16px;
+}
+ 
+.restaurant .restaurant__poster {
+  width: 100%;
+  max-width: 400px;
+}
+ 
+.restaurant .restaurant__info h4 {
+  margin: 8px 0;
+} 
+  
+/*
+  restaurant Item
+*/
+ 
+.restaurant-item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.restaurant-item__thumbnail {
+  width: 100%;
+}
+
+.restaurant-item__city {
+  color: red;
+  text-decoration: none;
+  font-size: 16px;
+}
+ 
+.restaurant-item__header {
+  position: relative;
+}
+ 
+.restaurant-item .restaurant-item__header .restaurant-item__header__poster {
+  width: 100%;
+}
+ 
+.restaurant-item .restaurant-item__header .restaurant-item__header__rating {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #f9f7f7;
+  background-color: black;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+ 
+.restaurant-item .restaurant-item__header .restaurant-item__header__rating .restaurant-item__header__rating__score {
+  margin-left: 10px;
+}
+ 
+.restaurant-item .restaurant-item__content {
+  padding: 16px;
+}
+ 
+.restaurant-item .restaurant-item__content h3 {
+  margin: 0 0 10px 0;
+  font-weight: 400;
+}
+ 
+.restaurant-item .restaurant-item__content h3 a {
+  font-size: 2em;
+  color: #71c9ce;
+  text-decoration: none;
+}
+ 
+.restaurant-item .restaurant-item__content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+/*
+* headline
+*/
+
+.headline__figure {
+  width: 100%;
+  padding: 16px 16px;
+}
+
+.headline__figure img {
+  width: 100%;
+}
+
+.headline__figure figcaption {
+  text-align: center;
+  color: #666666;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+.headline__content {
+  width: 100%;
+  padding: 16px 16px;
+}
+
+.headline__title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.headline__description {
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+.headline__button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  margin-top: 24px;
+  cursor: pointer;
+  padding: 15px 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background-color: #71c9ce;
+  transition: opacity 0.3s;
+}
+
+.headline__button:hover {
+  opacity: 0.8;
+}
+
+/*
+* explore
+*/
+
+.explore {
+  width: 100%;
+  margin: 30px auto;
+  text-align: center;
+  
+}
+
+/*
+   Like
+*/
+.like {
+  font-size: 18px;
+  position: absolute;
+  top: 125px;
+  right: 16px;
+  background-color: #db0000;
+  color: white;
+  border: 0;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comment-section{
+  max-height: 50vh;
+  max-width: 80%;
+  background-color: gray;
+  overflow-y:scroll;
+}
+.comment{
+  padding: 2%;
+  margin: 2%;
+  background-color: #ffff;
+  color: black;
+}
+
+.comment .review__date {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.comment .reviewer {
+  color: rgb(0, 153, 255);
+}
+
+.comment .review {
+  font-size: 18px;
+  font-style: bold;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+ 
+/*
+ * footer
+ */
+
+ footer {
+  background-color: #222831;
+  padding: 1em;
+  width: 100%;
+  text-align: center;
+}
+
+footer p {
+  display: inline-block;
+  padding: 1.3em;
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff
+}
